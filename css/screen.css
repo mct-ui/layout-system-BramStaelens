@@ -68,6 +68,7 @@ h1 {
 }
 
 /* Example inline media query */
+
 @media (min-width: 768px) {
     h1 {
         font-size: 58px;
@@ -166,6 +167,56 @@ a:focus {
     ---
     Object description
 */
+
+.o-row {
+    padding: 24px 24px 0;
+    overflow: auto;
+}
+
+.o-row--primary {
+    background: #e85e00;
+    color: #fff;
+}
+
+.o-row--grey-dark {
+    background: #111;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .o-row--lg {
+        padding: 48px 48px 24px;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0;
+    }
+}
+
+/*
+    Objects: Container
+    ---
+    Creates a horizontal container that sets de global max-width
+*/
+
+.o-container {
+    max-width: 90em;
+}
+
+.o-container--sm {
+    max-width: 36em;
+}
+
+.o-container--md {
+    max-width: 45em;
+}
+
+.o-container--lg {
+    max-width: 60em;
+}
+
+.o-container--xl {
+    max-width: 75em;
+}
 
 /*------------------------------------*\
   #COMPONENTS
